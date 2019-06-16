@@ -1,0 +1,24 @@
+[ignore]
+.*/node_modules/.*
+.*/webpack.*\.js
+
+[libs]
+./src/types/flowInterfaces.js.flow
+node_modules/iflow-material-ui/index.js.flow
+
+[options]
+module.system.node.resolve_dirname=node_modules
+module.system.node.resolve_dirname=src
+
+module.system=haste
+module.name_mapper='.+\.s?css' -> 'CSSModule'
+module.name_mapper='^rxjs/Observable$' -> 'rxjs'
+esproposal.class_instance_fields=enable
+esproposal.class_static_fields=enable
+suppress_comment=.*\\$FlowIssue.*
+
+experimental.const_params=true
+
+[include]
+./node_modules/
+./src/

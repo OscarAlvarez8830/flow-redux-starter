@@ -1,0 +1,46 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: white;
+  color: black;
+  line-height: 20px;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+#root {
+  display: flex;
+  min-height: 100vh;
+  height: 100vh;
+  flex-direction: column;
+}
+
+input::-ms-clear {
+  display: none;
+}
